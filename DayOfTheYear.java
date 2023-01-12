@@ -14,7 +14,7 @@ public class DayOfTheYear { // class begins
         System.out.print("Enter the month number : ");
         int mm = sc.nextInt();
 
-        System.out.print("Enter the year :");
+        System.out.print("Enter the year : ");
         int yy = sc.nextInt();
 
         sc.close();
@@ -28,7 +28,7 @@ public class DayOfTheYear { // class begins
         else if (yy % 4 == 0)
             m[1] = 29;
 
-        for (int i = 0; i < mm; i++)
+        for (int i = 0; i < mm - 1; i++)
             dy += m[i];
 
         System.out.println("\nCORRESPONDING DAY OF THE YEAR IS : " + dy); // printing the corresponding day of the year
